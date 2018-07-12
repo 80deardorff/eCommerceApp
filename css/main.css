@@ -1,0 +1,51 @@
+section {
+    width: 100vw;
+    padding: 25px 0;
+}
+
+div.row {
+    margin: auto;
+    width: 90%;
+}
+
+/* ITEM */
+div.item {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+div.item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+div.item div {
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+
+div.item div h5 {
+    padding: 10px;
+}
+
+div.item div p {
+    margin: 0;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px 10px 0 10px;
+}
+
+div.item div button {
+    margin-top: 10px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575px) {
+    button {
+         margin-left: auto;
+    }
+    div.item {
+        padding: 10px 0;
+    }
+}
