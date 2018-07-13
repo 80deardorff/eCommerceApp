@@ -56,5 +56,22 @@ function displayItem(item) {
 //RUNS THE displayItem FUNCTION AND PULLS INFO FROM THE items ARRAY WITH A FOR LOOP
 for (let i = 0; i < items.length; i++) {
     displayItem(items[i]);
-    console.log('success');
 }
+
+// ON CLICK OF ADD NEW ITEM BUTTON
+$('#addNewItemButton').click(function(){
+
+    // CREATE VARIABLES FOR EACH VALUE ENTERED
+    let newName = $('#inputName').val();
+    let newImage = $('#inputImage').val();
+    let newDescription = $('#inputDescription').val();
+    let newPrice = parseInt($('#inputPrice').val());
+    let newStock = parseInt($('#inputStock').val());
+
+    // CREATE NEW OBJECT
+    let newItem = new Item(newName, newImage, newDescription, newPrice, newStock);
+
+    // PUSH ITEM TO ARRAY
+    items.push(newItem);
+    displayItem(items[items.length-1]);
+});

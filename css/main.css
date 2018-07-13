@@ -1,3 +1,24 @@
+/* NAVBAR */
+.navbar-brand {
+    font-size: 1.55rem;
+}
+
+a.navbar-brand img {
+    padding-bottom: 2px;
+    display: inline;
+    height: 70px;
+}
+
+form i {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+}
+
+form i:hover {
+    color: lightgrey !important;
+}
+
+/* MAIN SECTION */
 section {
     width: 100vw;
     padding: 25px 0;
@@ -38,6 +59,11 @@ div.item div p {
 
 div.item div button {
     margin-top: 10px;
+}
+
+/* ADD ITEM SECTION */
+section.add h2 {
+    text-decoration: underline;
 }
 
 /* MEDIA QUERIES */

@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- WEBSITE TITLE -->
-	<title></title>
+	<title>Parts</title>
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="https://cdn.freebiesupply.com/logos/large/2x/bmw-m-series-1-logo-png-transparent.png">
 	<!-- FONT AWESOME LINK -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 	<!-- BOOTSTRAP CDN LINK -->
@@ -18,22 +20,51 @@
 
 <!-- NAV BAR -->
 	<nav class="navbar navbar-light bg-secondary">
-		<a class="navbar-brand">Parts</a>
+		<a class="navbar-brand text-white"><img src="https://cdn.freebiesupply.com/logos/large/2x/bmw-m-series-1-logo-png-transparent.png" alt="M Logo">Parts</a>
 		<form class="form-inline">
 			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 			<button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+			<i class="fas fa-shopping-cart text-white"></i>
 		</form>
 	</nav>
 
 <!-- MAIN SECTION -->
-	<section class="container-fluid bg-light">
+	<section class="main container-fluid bg-light">
 		<div class="row bg-light">
 			<!-- ITEMS ARE PRINTED HERE FROM JS -->
 		</div>
+	</section>
 
-
-
-
+<!-- ADD ITEM SECTION -->
+	<section class="add container-fluid text-center">
+		<h2 class="py-3">Add New Item</h2>
+		<form class="px-5">
+			<div class="form-row">
+		    	<div class="form-group col-md-6">
+					<label>Item Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Item Name">
+		    	</div>
+			 	<div class="form-group col-md-6">
+					<label for="inputImage">Item Image</label>
+					<input type="url" class="form-control" id="inputImage" placeholder="Image URL">
+			    </div>
+		  	</div>
+		  	<div class="form-group">
+			    <label for="inputDescription">Item Description</label>
+			    <input type="text" class="form-control" id="inputDescription" placeholder="Item Description">
+		  	</div>
+		  	<div class="form-row">
+		    	<div class="form-group offset-md-3 col-md-3">
+					<label for="inputPrice">Item Price</label>
+					<input type="text" class="form-control" id="inputPrice" placeholder="No Commas (E.g. 3000.45)">
+		    	</div>
+			    <div class="form-group col-md-3">
+					<label for="inputStock">Item Stock</label>
+					<input type="text" class="form-control" id="inputStock" placeholder="Item Stock">
+			    </div>
+		  	</div>
+			<button id="addNewItemButton" type="button" class="btn btn-success">Add New Item</button>
+		</form>
 	</section>
 
 <!-- SCRIPTS -->
